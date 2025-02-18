@@ -34,10 +34,10 @@ Before running the application, make sure you have the following installed:
 - **npm** (Node Package Manager) or **yarn** (optional, but recommended).
 
 Steps to run this project:
-1) Open terminal in any folder and write https://github.com/shivamparksmart/analyticsvidhya_assignment1.git
+1) Open terminal in any folder and write git clone "https://github.com/shivamparksmart/analyticsvidhya_assignment1.git"
 2) cd interactive-roadmap
 3) npm i
 4) npm run dev
-5) hit http://localhost:3000/roadmap
+5) hit http://localhost:3000/roadmap in the browser
 
 
