@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Roadmap Application - README
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project implements an interactive roadmap feature in Next.js, where users can visually track their progress through lessons. The application is designed to display a series of lessons in a roadmap format, with each lesson represented as a clickable circle. Users can navigate to specific lessons by clicking the circles, and their progress is saved. The application also includes smooth animations and a responsive, accessible design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Lesson Roadmap**: Displays a list of lessons in a roadmap format with each lesson represented as a circle.
+- **Progress Tracking**: The user’s progress is tracked and stored, either in the browser using `localStorage` or via an API.
+- **Interactive UI**: Clicking a lesson circle will display a toast message with navigation to the relevant course page.
+- **Smooth Animations**: Transitions between lesson stages are animated for a better user experience.
+- **Responsive and Accessible**: The application is designed to be responsive across different screen sizes and accessible to users with various needs.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## File Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `src/app/roadmap/page.jsx`
 
-## Learn More
+This file contains the main implementation of the roadmap page where lessons are displayed. The file includes:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Rendering the Roadmap**: Displays a list of lessons dynamically.
+2. **Lesson Progress**: Manages the user's progress and shows it visually (e.g., progressing circles).
+3. **Toast Notifications**: Provides feedback when users interact with the lessons.
+4. **Smooth Animations**: Controls animations for transitions between lessons.
+5. **Responsive Layout**: Ensures the roadmap adapts to different screen sizes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to Run the Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+Before running the application, make sure you have the following installed:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Node.js**: Version 12 or higher.
+- **npm** (Node Package Manager) or **yarn** (optional, but recommended).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Steps to run this project:
+1) Open terminal in any folder and write https://github.com/shivamparksmart/analyticsvidhya_assignment1.git
+2) cd interactive-roadmap
+3) npm i
+4) npm run dev
+5) hit http://localhost:3000/roadmap
+
+
